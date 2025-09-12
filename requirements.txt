@@ -5,3 +5,11 @@ Werkzeug>=2.3.6,<4.0
 Flask_WTF>=1.1.1
 email_validator>=2.0.0
 gunicorn
+email-validator
+flask
+flask-login
+flask-sqlalchemy
+flask-wtf
+gunicorn
+werkzeug
+wtforms
