@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Smruti - Smruti Time{% endblock %}
+{% block title %}Memory - ReLive{% endblock %}
 {% block content %}
 <style>
   .smruti-card {
@@ -57,7 +57,7 @@
 </style>
 
   <div style="background: #fff; border-radius: 20px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); margin-bottom: 30px;">
-    <h1 style="color: #333; margin-bottom: 10px; text-align: center;">🧠 Share Your Smruti</h1>
+    <h1 style="color: #333; margin-bottom: 10px; text-align: center;">🧠 Share Your Memory</h1>
     <p style="text-align: center; color: #666; margin-bottom: 20px;">Share your memories and learn from others' experiences</p>
   </div>
 
@@ -70,12 +70,12 @@
   {% endwith %}
 
   <div style="background: #fff; border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 30px;">
-    <h3 style="color: #4ecdc4; margin-bottom: 20px;">✨ Share a New Smruti</h3>
+    <h3 style="color: #4ecdc4; margin-bottom: 20px;">✨ Share a New Memory</h3>
     
     <form method="POST">
       <div style="margin-bottom: 20px;">
         <h4 style="color: #ff6b6b; margin-bottom: 10px;">📝 Title</h4>
-        <input type="text" name="title" placeholder="Give your smruti a catchy title..." style="width: calc(100% - 24px); padding: 10px; border: 2px solid #f0f0f0; border-radius: 8px; font-size: 16px; box-sizing: border-box;" required>
+        <input type="text" name="title" placeholder="Give your memory a title..." style="width: calc(100% - 24px); padding: 10px; border: 2px solid #f0f0f0; border-radius: 8px; font-size: 16px; box-sizing: border-box;" required>
       </div>
       
       <div style="margin-bottom: 20px;">
@@ -84,7 +84,7 @@
       </div>
       
       <div style="margin-bottom: 20px;">
-        <h4 style="color: #45b7d1; margin-bottom: 10px;">💬 Your Smruti</h4>
+        <h4 style="color: #45b7d1; margin-bottom: 10px;">💬 Your Memory</h4>
         <textarea name="content" placeholder="Share your memory, lesson, or experience that others can learn from..." style="width: calc(100% - 34px); height: 120px; padding: 15px; border: 2px solid #f0f0f0; border-radius: 8px; font-size: 16px; line-height: 1.6; resize: vertical; box-sizing: border-box;" required></textarea>
       </div>
       
@@ -92,12 +92,12 @@
       
 
       
-      <button type="submit" class="pulse" style="background: linear-gradient(45deg, #ff6b6b, #4ecdc4); color: white; border: none; padding: 15px 30px; border-radius: 25px; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2); width: 100%;">🚀 Share My Smruti</button>
+      <button type="submit" class="pulse" style="background: linear-gradient(45deg, #ff6b6b, #4ecdc4); color: white; border: none; padding: 15px 30px; border-radius: 25px; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2); width: 100%;">🚀 Share My Memory</button>
     </form>
   </div>
 
   <div style="background: #fff; border-radius: 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-    <h3 style="color: #f39c12; margin-bottom: 20px;">🌟 Community Smruti's</h3>
+    <h3 style="color: #f39c12; margin-bottom: 20px;">🌟Memories of your Friends</h3>
     
     {% if smrutis %}
       <div class="smruti-grid">
@@ -111,8 +111,8 @@
       </div>
     {% else %}
       <div style="text-align: center; padding: 40px; color: #666;">
-        <p style="font-size: 18px; margin-bottom: 10px;">🌱 No smruti's yet!</p>
-        <p>Be the first to share a memory and inspire others.</p>
+        <p style="font-size: 18px; margin-bottom: 10px;">🌱 No memories yet!</p>
+        <p>Be the first to share a memory and relive it.</p>
       </div>
     {% endif %}
   </div>
