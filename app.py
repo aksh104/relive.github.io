@@ -14,6 +14,14 @@ def create_app():
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     db.init_app(app)
+    
+    # Disable caching for development
+    @app.after_request
+    def after_request(response):
+        response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+        response.headers['Pragma'] = 'no-cache'
+        response.headers['Expires'] = '0'
+        return response
 
     login_manager = LoginManager()
     login_manager.login_view = 'login'
